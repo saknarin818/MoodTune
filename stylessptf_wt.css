@@ -1,0 +1,129 @@
+/* ใช้ฟอนต์ที่ดูทันสมัย */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1.display-4 {
+    font-weight: 600;
+    color: #4b79a1;
+    background: -webkit-linear-gradient(left, #4b79a1, #283e51);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #4b79a1;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #283e51;
+}
+
+.weather-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #4b79a1;
+}
+
+.list-group-item {
+    border: none;
+    padding: 15px;
+    background-color: rgba(75, 121, 161, 0.1);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: rgba(75, 121, 161, 0.2);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.footer {
+    margin-top: 30px;
+}
+
+.btn-outline-primary {
+    color: #4b79a1;
+    border-color: #4b79a1;
+    border-radius: 25px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    padding: 10px 20px;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: #4b79a1;
+    border-color: #4b79a1;
+}
+
+/* Media Queries สำหรับหน้าจอแนวนอน */
+@media (orientation: landscape) {
+    body {
+        height: 100vh;
+        padding: 10px; /* ลด padding เมื่ออยู่ในโหมดแนวนอน */
+    }
+
+    .container {
+        max-width: 900px; /* เพิ่มความกว้างของ container เมื่ออยู่ในโหมดแนวนอน */
+        padding: 30px; /* ลด padding เล็กน้อย */
+    }
+
+    h1.display-4 {
+        font-size: 1.8rem; /* ลดขนาดหัวข้อ */
+        margin-bottom: 15px; /* ลดระยะห่างใต้หัวข้อ */
+    }
+
+    .btn-primary {
+        padding: 8px 16px; /* ลด padding ของปุ่ม */
+    }
+
+    .weather-icon {
+        font-size: 2.5rem; /* ลดขนาดไอคอนสภาพอากาศ */
+    }
+
+    .list-group-item {
+        padding: 10px; /* ลด padding ในรายการเพลง */
+    }
+
+    .card {
+        padding: 15px; /* ลด padding ของการ์ด */
+    }
+}

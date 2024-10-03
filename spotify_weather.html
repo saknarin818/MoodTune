@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Spotify Playlist by Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylessptf_wt.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h1 class="display-4 mb-4 text-gradient">Spotify Playlist by Weather</h1>
+
+        <!-- Location Input -->
+        <div class="input-group mb-3">
+            <input type="text" id="city_input" class="form-control" placeholder="Enter Location" value="แม่โจ้" aria-label="Location" aria-describedby="btn_get_weather">
+            <button id="btn_get_weather" class="btn btn-primary" type="button">Get Weather</button>
+        </div>
+
+        <!-- Weather Display -->
+        <div id="weather_display" class="mb-4">
+            <h2 class="fw-bold" id="weather_title">Weather Details</h2>
+            <div class="weather-icon mt-3"></div>
+        </div>
+
+        <!-- Genre Selection -->
+        <div class="mb-3">
+            <label for="select_genre" class="form-label">Select Genre</label>
+            <select id="select_genre" class="form-select"></select>
+        </div>
+
+        <!-- Playlist Selection -->
+        <div class="mb-3">
+            <label for="select_playlist" class="form-label">Select Playlist</label>
+            <select id="select_playlist" class="form-select"></select>
+        </div>
+
+        <!-- Submit Button for Tracks -->
+        <button id="btn_submit" class="btn btn-secondary mb-4">Get Tracks</button>
+
+        <!-- Track List -->
+        <ul class="list-group song-list mb-4"></ul>
+
+        <!-- Song Details -->
+        <div id="song-detail" class="">
+            <h3 class="card-title">Track Details</h3>
+            <p id="track-details"></p>
+        </div>
+
+        <!-- Hidden Token Field -->
+        <input type="hidden" id="hidden_token">
+
+        
+        <!-- Spotify Player -->
+        <iframe id="spotify-player" src="" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+
+    <script src="scriptsptf_wt.js"></script>
+</body>
+</html>

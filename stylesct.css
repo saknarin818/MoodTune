@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffe0b2, #ffccbc); /* ไล่สีสดใส */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* พื้นหลังแบบโปร่งใส */
+    padding: 40px; /* เพิ่ม padding */
+    border-radius: 15px; /* ทำให้มุมมน */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    animation: fadeIn 1s ease; /* เอฟเฟ็กต์การเคลื่อนไหว */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1.service-name {
+    color: #FF6F61; /* เปลี่ยนสีหัวข้อ */
+    font-size: 2.5em; /* ขนาดตัวอักษร */
+    margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+}
+
+p {
+    font-size: 1.1em; /* ขนาดตัวอักษร */
+    line-height: 1.6; /* ระยะห่างระหว่างบรรทัด */
+    margin: 10px 0; /* ระยะห่างระหว่างย่อหน้า */
+}
+
+a {
+    text-decoration: none; /* ลบเส้นใต้ */
+    color: #FF6F61; /* สีข้อความ */
+    transition: color 0.3s; /* การเปลี่ยนแปลงที่นุ่มนวล */
+}
+
+a:hover {
+    color: #FF4C3B; /* สีข้อความเมื่อชี้เมาส์ */
+}
+
+.contact-info {
+    margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+}
+
+.contact-info p {
+    margin: 5px 0; /* ระยะห่างระหว่างข้อมูลติดต่อ */
+}
+
+.button-link {
+    display: inline-block; /* ทำให้เป็นบล็อกขนาดตามเนื้อหา */
+    padding: 10px 20px; /* ขนาด padding ของปุ่ม */
+    background-color: #FF6F61; /* สีพื้นหลังของปุ่ม */
+    color: white; /* สีตัวอักษร */
+    font-size: 18px; /* ขนาดตัวอักษร */
+    text-decoration: none; /* ลบเส้นใต้ */
+    border-radius: 25px; /* ทำให้ปุ่มมีมุมมน */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* การเปลี่ยนแปลงเมื่อชี้หรือกด */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+}
+
+.button-link:hover {
+    background-color: #FF4C3B; /* เปลี่ยนสีพื้นหลังเมื่อชี้เมาส์ */
+    transform: translateY(-2px); /* ปรับการเลื่อนขึ้นเมื่อชี้เมาส์ */
+}
+
+.button-link:active {
+    background-color: #D8433A; /* สีเมื่อกดปุ่ม */
+    transform: translateY(0); /* เมื่อกดให้กลับสู่ตำแหน่งเดิม */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* ลดเงาเมื่อกด */
+}
